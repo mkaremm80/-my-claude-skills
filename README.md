@@ -1,6 +1,6 @@
 # Paper Understanding Skills for Claude
 
-Five Claude skills that help students and researchers work with research papers.
+Six Claude skills that help students and researchers work with research papers.
 Give Claude a paper (PDF or LaTeX) and ask for one of the outputs below, or give Claude a topic for a lecture survey.
 
 | Skill | What you get | Ask Claude like this |
@@ -10,6 +10,7 @@ Give Claude a paper (PDF or LaTeX) and ask for one of the outputs below, or give
 | [paper-explainer-video](skills/paper-explainer-video/SKILL.md) | A 16:9 animated dashboard video (mp4) with a parameter sweep and live plots, plus the Python script and a narration file. | "Make an explainer video for Section III." |
 | [paper-comic](skills/paper-comic/SKILL.md) | A comic-magazine PDF (A4, about 8 pages) that tells the paper as a story with characters, panels and speech bubbles. | "Turn this paper into a comic." |
 | [lecture-survey-gap-finder](skills/lecture-survey-gap-finder/SKILL.md) | A colorful PDF lecture survey (A4, about 8-12 pages) of recent papers on any topic, with figures, a research-gap table and a table of Q1 paper ideas. | "Make a lecture survey on [topic] with gaps and Q1 ideas." |
+| [paper-from-zero-guide](skills/paper-from-zero-guide/SKILL.md) | A colorful PDF guide (A4, about 20-30 pages) that explains a paper from zero: background, every equation with labels, full proofs, examples, results, and simulation checks. | "Explain this paper from zero." |
 
 All skills follow the same rules: simple English (B2 level), every number comes from the paper,
 illustrative examples are clearly labeled, and each output is checked visually before delivery.
@@ -17,7 +18,7 @@ illustrative examples are clearly labeled, and each output is checked visually b
 ## Install
 
 ### Claude app (claude.ai / desktop)
-1. Download a skill zip from the [`dist/`](dist) folder (one zip per paper skill; lecture-survey-gap-finder has no dist zip yet, install it via Claude Code below).
+1. Download a skill zip from the [`dist/`](dist) folder (one zip per paper skill; lecture-survey-gap-finder and paper-from-zero-guide have no dist zips yet, install them via Claude Code below).
 2. Go to **Settings → Capabilities → Skills** and upload the zip.
 3. Turn the skill on, then ask Claude as shown in the table above.
 
@@ -47,6 +48,7 @@ skills/
   paper-comic/SKILL.md
   paper-comic/scripts/comic_engine.py   # same engine as in SKILL.md, ready to import
   lecture-survey-gap-finder/SKILL.md
+  paper-from-zero-guide/SKILL.md
 dist/                                   # zips for the four paper skills, for upload to the Claude app
 ```
 
